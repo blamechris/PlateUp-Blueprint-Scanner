@@ -17,11 +17,13 @@ pic = pyscreenshot.grab(bbox=(0, 0, 1280, 1440)) # bbox = (X1,Y1,X2,Y2) X1,Y1 I 
 #pic.show()
 pic.save("ss.png")
 
-ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required = True, help = "path to input image for OCR")
-args = vars(ap.parse_args())
+# ap = argparse.ArgumentParser()
+# ap.add_argument("-i", "--image", required = True, help = "path to input image for OCR")
+# args = vars(ap.parse_args())
 
-image = cv2.imread(args["image"])
+
+# image = cv2.imread(args["image"])
+image = cv2.imread("ss.png")
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 text = pytesseract.image_to_string(image)
