@@ -13,9 +13,9 @@ import cv2
 #           Process screenshot using tesseract
 #               Copy blueprint names from screenshot to clipboard for pasting into excel
 
-pic = pyscreenshot.grab(bbox=(0, 0, 1280, 1440)) # bbox = (X1,Y1,X2,Y2) X1,Y1 I think these are the corners of the screen maybe?
+#pic = pyscreenshot.grab(bbox=(0, 100, 1280, 500)) # bbox = (X1,Y1,X2,Y2) X1,Y1 I think these are the corners of the screen maybe?
 #pic.show()
-pic.save("ss.png")
+#pic.save("ss.png")
 
 # ap = argparse.ArgumentParser()
 # ap.add_argument("-i", "--image", required = True, help = "path to input image for OCR")
