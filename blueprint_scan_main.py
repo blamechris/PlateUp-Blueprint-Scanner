@@ -5,7 +5,6 @@ import cv2
 
 
 
-
 # Outline:
 # On run
 #   Screenshot current game screen
